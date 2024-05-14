@@ -1,3 +1,5 @@
+console.log("Hello World");
+
 const pi = 3.14;
 let fullname = "satya"
 var age = 19
