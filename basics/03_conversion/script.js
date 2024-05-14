@@ -62,4 +62,18 @@ let str3 = str1+ " "+str2;
 let points = 100
 // points++
 //++points
-console.log(points);
+
+
+let x= 5;
+console.log(x++);   // ye line print karega 5 koo 
+console.log(x);     // ye increment karega 
+
+
+let y = 5; 
+console.log(++x);  // yaha per 6 print ho jayga 
+console.log(x);  
+
+/*x++: Purani value pehle use hoti hai, phir increment hota hai.
+++x: Pehle increment hota hai, fir new value use hoti hai.
+x--: Purani value pehle use hoti hai, phir decrement hota hai.
+--x: Pehle decrement hota hai, fir new value use hoti hai.*/
