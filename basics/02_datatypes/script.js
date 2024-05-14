@@ -13,7 +13,6 @@ let age = 18
 let validemail = true
 let creditdetail;
 
-// primitive datatype pre defined
 /*number => stores 2 to power 53
 bigint 
 string 
@@ -22,10 +21,7 @@ symbol  => unique
 undefined => jo value decleare to hai but undefined hai 
 null  => stand alone value
 
-// non primitive  , user defined
 object 
-arrays 
-functions
 */ 
 
 console.log(typeof (age));
