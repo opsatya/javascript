@@ -1,6 +1,6 @@
 let a = 100   // global scope 
 if(true){
-    let a = 10  // local cope 
+    let a = 10  // block cope 
     const b = 20
     var c = 30  
     console.log("inner",a);
