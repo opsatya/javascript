@@ -1,43 +1,49 @@
-for (let i = 0; i < 10; i++) {
+// for
+
+for (let i = 0; i <= 10; i++) {
     const element = i;
-    if(i == 5){
-       // console.log("5 is the best number");
+    if (element == 5) {
+        //console.log("5 is best number");
     }
-    //console.log(i);   
+    //console.log(element);
+    
 }
-//console.log(i); // out of the scope 
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(`table of ${i}`);
-//     for (let j = 1; j <= 10; j++) {
-//         console.log(`${i}*${j} = ${i*j}`);
+// console.log(element);
+
+for (let i = 1; i <= 10; i++) {
+    //console.log(`Outer loop value: ${i}`);
+   for (let j = 1; j <= 10; j++) {
+    //console.log(`Inner loop value ${j} and inner loop ${i}`);
+    //console.log(i + '*' + j + ' = ' + i*j );
+   }
+    
+}
+let myArray = ["flash", "batman", "superman"]
+//console.log(myArray.length);
+for (let index = 0; index < myArray.length; index++) {
+    const element = myArray[index];
+    //console.log(element);
+    
+}
+
+
+// break and continue
+
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`Detected 5`);
+//         break;   // iske bad sidhe loop se exit kar jate hai
 //     }
+//    console.log(`Value of i is ${index}`);
     
 // }
 
-
-// let myarray = ["superman","batman","flash","batman"]
-// for (let index = 0; index < myarray.length; index++) {
-//     const element = myarray[index]
-//     console.log(element);
+for (let index = 1; index <= 20; index++) {
+    if (index == 5) {
+        console.log(`Detected 5`);
+        continue; // ye current iteration ko skip deta hai
+    }
+   console.log(`Value of i is ${index}`);
     
-// }
-
-
-//break and continue
-// for (let i = 1; i <= 10; i++) {
-//  if(i==5){
-//     console.log(`${i} five dected`);
-//     break;  // breaking the statement iske bad koi bhi statemnt excute nahi hoga
-//  }
-//   console.log(i);  
-//  }
-
-// for (let i = 1; i <= 10; i++) {
-//  if(i==5){
-//     console.log(`five dected`);
-//     continue;    // skip the current iteration
-//  }
-//   console.log(i);  
-// }
-
+}
