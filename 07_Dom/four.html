@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom document object model</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addli(langname){
+    const li = document.createElement('li')
+    li.innerHTML = `${langname}`
+    document.querySelector('.language').appendChild(li)
+}
+addli("python");
+addli('typescript')
+
+function addoptimize(langname){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+}
+addoptimize("golang")
+
+
+// edit
+const secondlang = document.querySelector('li:nth-child(2)')
+//secondlang.innerHTML = "mojo"
+const newli = document.createElement('li')
+newli.textContent = "bhailang"
+secondlang.replaceWith(newli)
+
+const firstlang = document.querySelector('li:nth-child(1)')
+const newelement = document.createElement('li')
+newelement.textContent = "typescript"
+firstlang.replaceWith(newelement)
+
+const fourthlang = document.querySelector('li:last-child')
+fourthlang.outerHTML = "<li>react</li>"
+
+// remove
+const lastlang = document.querySelector('li:nth-child(4)')
+lastlang.remove()
+</script>
+</html>
